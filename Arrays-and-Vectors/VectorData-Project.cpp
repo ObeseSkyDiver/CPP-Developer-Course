@@ -22,10 +22,19 @@ int main()
     while (userInput >= 0)
     {
         userVector.push_back(userInput);
-        cout << "Please enter a positive number to keep going or enter a negative to end this loop. " << endl;
+        cout << "Please enter a positive number to keep going " << endl;
+        cout << "or enter a negative to end this loop: ";
+        cin >> userInput;
     }
 
-    cl
+    cout << "Now we are going to print out double of each entry you put." << endl;
+
+    for (int num: userVector)
+    {
+        cout << "Before: " << num << endl;
+        cout << "After: " << num * 2 << endl;
+    }
+
 
     return 0;
 }
